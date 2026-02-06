@@ -3,7 +3,8 @@ id: network_userscript
 title: Network consumption helper script
 sidebar_label: Network helper
 ---
-:::tip Please Note 
+::: Please Note:
+
 This guide is written by a community member, support for this will solely be via our discord community
 
 :::
@@ -34,6 +35,20 @@ For example: current billing period is 30 days, and total month limit is 10000 G
 It tells you in just a couple of words how you are doing at the moment. To make this evaluation, the script compares your current "Used" value with "Threshold"; if you are a day behind or in front of a threshold, it will show "Fine". If more than a day behind, it will offer to increase upload speed; if more than a day in front, it will suggest to lower your upload speed.
 
 For example: your recommended daily consumption is 300Gb. Today is the second day of a billing period; by the end of today your threshold is 600Gb. If you stay between 300Gb and 900Gb, the script will consider you doing fine.
+
+## Enhanced Version Available
+
+- **Original:** https://github.com/toomanynights/seedbox_netused
+
+- **Issues fixed:**
+  -  **Full support** across Violentmonkey/Tampermonkey/Greasemonkey instead of closed-source Tampermonkey solely
+  -  Fixed "lost Edit button" UX bug
+  -  Forced billing day configuration on first run
+  -  Fixed this error ---> **HTTP404 Error fetching resource!**
+  -  Fixed favicon
+  -  Fixed all typos in userscript
+
+- **Improved:** https://github.com/NoeRi9n/seedbox-netused-improved
 
 ## How to install?
 1. Get [TamperMonkey](https://www.tampermonkey.net/).
